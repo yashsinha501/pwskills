@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Manrope:wght@400;500;600;700;800&family=Playfair:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* designing the navbar */
+.navbar {
+  height: 4.5em;
+  width: 100%;
+  background: rgb(58, 55, 55);
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 5vw;
+  font-size: 30px;
+  color: #1893f7;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: cover;
+  filter: invert(100%);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.menu li a {
+  color: white;
+}
+
+.right-nav>button {
+  padding: 1.5vh 1vw;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #0797cf;
+  color: white;
+}
+
+.right-nav>button:hover {
+  background-color: #45caff;
+  cursor: pointer;
+}
+
+.humbugger {
+  display: none;
+}
+
+.hero-section {
+  display: flex;
+  padding-inline: 10em;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.right-side,
+.left-side {
+  flex: 1;
+}
+
+.left-side {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.left-side h3 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.left-side h1 {
+  font-size: 4em;
+  color: #1893f7;
+}
+
+.left-side p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1893f7;
+  margin-bottom: 0.9em;
+}
+
+.left-side .banner {
+  width: 70%;
+  margin-bottom: 0.5em;
+}
+
+.left-side .text {
+  font-size: 1em;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+}
+
+.right-side video {
+  width: 100%;
+  margin-left: 25%;
+}
+
+/* designing the footer */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5em;
+}
+
+.footer h1 {
+  margin-bottom: 1em;
+  font-size: 4em;
+  color: #4f39f2;
+}
+
+.footer .text {
+  line-height: 1.5em;
+  font-size: 3em;
+}
+
+/* small screens */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0 0.8em;
+  }
+
+  .navbar .logo {
+    width: 1.5em;
+  }
+
+  .menu {
+    display: none;
+    position: relative;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .open li a {
+    color: #000000;
+  }
+
+  .humbugger {
+    display: block;
+    color: white;
+  }
+
+  .left-side {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .left-side h1 {
+    font-size: 2.5em;
+  }
+
+  .left-side h3 {
+    font-size: 1.2em;
+  }
+
+  .left-side .banner {
+    width: 80%;
+  }
+
+  .right-side,
+  .left-side {
+    flex: 1;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .right-side video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer {
+    padding: 3em;
+    background-color: #ffffff;
+  }
+
+  .footer h1 {
+    font-size: 1em;
+    padding-inline: 30%;
+    text-align: center;
+  }
+
+  .footer .text {
+    font-size: 1em;
+    color: #000000;
+  }
+}
+
+/* tablet view screen size for 768px */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 5em;
+  }
+
+  .navbar .logo {
+    width: 4.7em;
+  }
+
+  .menu {
+    display: none;
+    position: relative;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #fffdfd;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .open li a {
+    color: black;
+  }
+
+  .humbugger {
+    display: block;
+    color: white;
+  }
+
+  .right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  /* hero section start for tablet */
+
+  .hero-section {
+    flex-direction: column;
+    padding-inline: 2em;
+  }
+
+  .right-side,
+  .left-side {
+    flex: 1;
+  }
+
+  .right-side video {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 3em;
+    background-color: #ffffff;
+  }
+
+  .footer h1 {
+    font-size: 1em;
+    padding-inline: 20%;
+  }
+
+  .footer .text {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+    overflow-x: hidden;
+}
+
+.inputbox-button {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    margin: 20px 0;
+    color: black;
+}
+
+input {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: black;
+}
+
+#data-btn {
+    background-color: #0707a3;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+}
+
+#data-btn:hover {
+    background-color: #101082;
+    padding: 10px 33px;
+}
+
+.container {
+    background-color: #050583;
+    display: none;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#img {
+    border-radius: 80px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.profile-info {
+    display: flex;
+    background-color: #3d3dfb;
+    margin: 10px 20px;
+    padding: 20px 10px;
+    font-size: 23px;
+}
+
+label {
+    padding: 0 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 0;
+}
+
+.repository {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 25px;
+}
+
+.repository h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.repository p {
+    font-size: 14px;
+    color: #f20c1f;
+    margin: 10px 0;
+}
+
+.repository a {
+    color: #10ed08;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.repository a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+    input {
+        padding: 8px 10px;
+    }
+
+    .inputbox-button {
+        padding: 16px;
+    }
+
+    #data-btn {
+        padding: 10px 40px;
+    }
+
+    #img {
+        height: 300px;
+    }
+
+    .image {
+        height: 400px;
+    }
+
+    .profile-info {
+        margin: 5px;
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .repository {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 40px 5px;
+    }
+
+    #img {
+        height: 200px;
+    }
+
+    .image {
+        height: 300px;
+    }
+}

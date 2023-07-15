@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid-layout</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="main">
+    <div class="card box1">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box2">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box3">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box4">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box5">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box6">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box7">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box8">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box9">
+      <img src="" alt="error" />
+    </div>
+    <div class="card box10">
+      <img src="" alt="error" />
+    </div>
+  </section>
+
+  <script>
+    function getRandomImage() {
+      fetch(
+        "https://api.unsplash.com/photos/?client_id=DxUYbWZpX7GgLHRFv6PUYGGfU4OF3yzwqzR5RyU4fN4"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          const images = document.querySelectorAll(".main img");
+          images.forEach((img, index) => {
+            img.src = data[index].urls.regular;
+            img.alt = data[index].alt_description;
+          });
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+
+    getRandomImage();
+  </script>
+</body>
+
+</html>

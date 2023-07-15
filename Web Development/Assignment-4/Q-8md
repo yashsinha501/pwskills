@@ -1,0 +1,27 @@
+# Q.8 How can you destructure objects and arrays in ES6?
+
+ Destructuring provides a concise way to access and work with the properties or elements of complex data structures. Here's how we can destructure objects and arrays:
+
+Destructuring Objects:
+To destructure an object, you use curly braces {} and provide the variable names that correspond to the object's property names.
+Example:
+const person = { name: 'Rishabh', age: 18, city: 'Ayodhya' }; or 
+
+const { name, age, city } = person;     // Destructuring
+
+console.log(name); // Output: Rishabh
+console.log(age); // Output: 18
+console.log(city); // Output: Ayodhya
+
+
+
+Destructuring Arrays:
+To destructure an array, you use square brackets [] and provide variable names to extract the corresponding array elements.
+const colors = ['red', 'green', 'blue'];
+
+Example:
+const [firstColor, secondColor, thirdColor] = colors;   // Destructuring
+
+console.log(firstColor); // Output: red
+console.log(secondColor); // Output: green
+console.log(thirdColor); // Output: blue

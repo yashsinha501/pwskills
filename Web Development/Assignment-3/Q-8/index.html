@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneCard Website</title>
+  <!-- link css file -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <!-- navbar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://www.getonecard.app/images/logo_black.svg" alt="error" />
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="right-nav">
+        <div class="humbugger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <button>Login</button>
+      </div>
+    </nav>
+  </header>
+  <!-- hero section -->
+  <section class="hero-section">
+    <div class="left-side">
+      <h3>Say Hi to</h3>
+      <h1>OneCard</h1>
+      <p>Co-branded Card Issuers:</p>
+      <img class="banner" src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+        alt="error" />
+      <p class="text">
+        India's best metal credit card. Built with full-stack tech. Backed by
+        the principles of simplicity, transparency, and giving back control to
+        the user.
+      </p>
+    </div>
+    <div class="right-side">
+      <video loop autoplay muted>
+        <source src="assets/vdo.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+  <!-- footer section -->
+  <section class="footer">
+    <h1>No Hidden Fees Ever</h1>
+    <div class="text">
+      <p>No Joining Fees.</p>
+      <p>No Annual Fees.</p>
+      <p>No Rewards Redemption Fees.</p>
+    </div>
+  </section>
+
+  <!-- link js file -->
+  <script>
+    {
+      const hamburger = document.querySelector(".humbugger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", function () {
+        menu.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+
+</html>

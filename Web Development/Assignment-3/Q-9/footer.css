@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer {
+  background-color: #141414;
+  border-top: 8px solid #333;
+  padding: 2rem 1rem;
+  color: #ffffff;
+  display: flex;
+  height: 60vh;
+  margin-top: 18%;
+  font-family: "Poppins", sans-serif;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.footer_row_1 {
+  width: 25%;
+  margin-left: 25px;
+}
+.footer_row_1 h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer_row_1 p {
+  margin-top: 15px;
+  color: #9e9b9b;
+  line-height: 35px;
+}
+.col h4 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.footer_row_2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-around;
+}
+.col a {
+  color: #9e9b9b;
+  text-decoration: none;
+  line-height: 45px;
+}
+#email_box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+}
+
+#btn {
+  background-color: #427aff;
+  padding: 10px 62px;
+  border-radius: 3px;
+  border: 1px solid #427aff;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+/* for small screens */
+@media only screen and (max-width: 600px) {
+  footer {
+    background-color: #000000;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .footer_row_1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer_row_2 {
+    width: 100%;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col h4 {
+    margin-top: 20px;
+  }
+  #btn {
+    padding: 10px 62px;
+  }
+}

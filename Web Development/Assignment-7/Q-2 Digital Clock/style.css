@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #181786;
+    font-size: 100px;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+    margin: 20px;
+    letter-spacing: 24px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+}
+
+.container {
+    display: flex;
+    background-color: #323ced;
+    padding: 60px;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.time-section {
+    margin: 0 15px;
+}
+
+#unit {
+    font-size: 20px;
+}
